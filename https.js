@@ -5,7 +5,7 @@ require('greenlock-express').create({
 //, server: 'https://acme-staging-v02.api.letsencrypt.org/directory'  // staging
 , email: 'tejaswi@asu.edu'                                     // CHANGE THIS
 , agreeTos: true
-, approveDomains: [ 'thebetween.info', 'www.thebetween.info' ]              // CHANGE THIS
+, approveDomains: [ 'hiddengems.fun', 'www.hidden.fun' ]              // CHANGE THIS
 , store: require('greenlock-store-fs')
 , configDir: homeDir
 //, app: require('express')().use('/', function (req, res) {
