@@ -20,14 +20,14 @@ app.get('/logout', function(req, res) {
 
 // LOGIN  ==============================
 app.post('/tryLogin', passport.authenticate('local-login', {
-    successRedirect : '/index.html', // redirect to the secure profile section
+    successRedirect : '/account.html', // redirect to the secure profile section
     failureRedirect : '/login.html#fail', // redirect back to the signup page if there is an error
     failureFlash : true // allow flash messages
 }));
 
 // process the signup form
 app.post('/tryRegister', passport.authenticate('local-signup', {
-    successRedirect : '/index.html', // redirect to the secure profile section
+    successRedirect : '/account.html', // redirect to the secure profile section
     failureRedirect : '/login.html#failReg', // redirect back to the signup page if there is an error
     failureFlash : true // allow flash messages
 }));
