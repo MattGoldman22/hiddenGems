@@ -17,7 +17,7 @@ textarea {
   margin-bottom: 1em;
 }
 
-input[type="submit"], [type="reset"]{
+button[type="submit"], [type="reset"]{
   padding: 10px;
   font-weight: bold;
   width: 30%;

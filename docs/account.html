@@ -25,9 +25,9 @@ var main = function(){
       return;
     }
     else{
-      document.getElementById("accountInfo").innerHTML = data;
+  //    document.getElementById("accountInfo").innerHTML = data;
     }
-  });               
+  });
 }
 
 var doLogout = function()
@@ -37,6 +37,20 @@ var doLogout = function()
     loadFile("./logout", function(d){window.location.reload()})
   }
 }
+function submitGem(){
+  var url = "./addProject?name=" + encodeURIComponent(document.getElementById("fName").value)
+  url +="&location=" + encodeURIComponent(document.getElementById("lName").value)
+  url +="&email=" + encodeURIComponent(document.getElementById("eAddress").value)
+  url +="&phonenumber=" + encodeURIComponent(document.getElementById("pNumber").value)
+  url +="&address=" + encodeURIComponent(document.getElementById("address").value)
+  url +="&campus=" + encodeURIComponent(document.getElementById("campus").value)
+  url +="&comments=" + encodeURIComponent(document.getElementById("comments").value)
+  url +="&publish=" + false
+
+  loadFile(url,function(data){
+
+  })
+}
 </script>
 </head>
 <body onload='main()'>
@@ -44,18 +58,18 @@ var doLogout = function()
   <nav class="navbar navbar-light bg-light static-top">
     <div class="container">
       <a class="navbar-brand" href="index.html">Hidden Gems</a>
-      
+
           <a clss="navbar-brand" href="Tempe.html">Tempe</a>
           <a clss="navbar-brand" href="Poly.html">Polytechnic</a>
           <a clss="navbar-brand" href="Phoenix.html">Downtown Phoenix</a>
           <a clss="navbar-brand" href="West.html">West</a>
       <a class="btn btn-primary" href="account.html">Submit Hidden Gem</a>
     </div>
-    
+
   </nav>
 
 <img src="asu_logo_1.png">
-<form action="./postform">
+
       <label for="fName">First & Last Name</label>
       <input type="text" name="first name" required="required" id="fName">
 
@@ -69,14 +83,21 @@ var doLogout = function()
       <input type="text" name="telephone number" required="required"  maxlength="12" id="pNumber">
 
       <label>Address for Hidden Gem</label>
-      <input type="address" name="address" required="required">
+      <input type="address" name="address" required="required" id="address">
+      <label>Campus</label>
+      <select id="campus">
+        <option value="Tempe">Tempe</option>
+        <option value="Tempe">Tempe</option>
+        <option value="Tempe">Tempe</option>
+        <option value="Tempe">Tempe</option>
+      </select>
 
       <label for="comments">Comments</label>
       <textarea name="myComments" rows="2" cols="30" id="comments"></textarea>
 
-      <input type="submit" value="Sumbit">
-      <input type="reset" name="Reset">
-</form>
+      <button type="submit" value="Submit" onclick="submitGem()">Submit</button>
+      <button type="reset" name="Reset" onclick="resetGem()">Reset</button>
+
 <div class='container'>
   <!-- put app here -->
   <div id='accountInfo'>
