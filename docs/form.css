@@ -35,3 +35,15 @@ img {
   margin: 0 auto;
   display: block;
 }
+
+#fileToUpload {
+  width: 275px;
+  margin: 0 auto;
+}
+
+label[for="upload"]{
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
