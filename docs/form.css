@@ -26,7 +26,7 @@ button[type="submit"], [type="reset"]{
   display: inline;
 }
 
-form {
+#form {
   width: 500px;
   margin: 0 auto;
 }
