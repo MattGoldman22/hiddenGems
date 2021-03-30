@@ -1,0 +1,16 @@
+.DTP{
+  padding: 2em;
+  margin: 1em;
+}
+.DTPimage{
+  display: block;
+  margin: 0 auto;
+}
+.cards, .card{
+  padding: 2em;
+}
+.card:hover{
+  background-color: lightblue;
+  transition: .3s;
+
+}
