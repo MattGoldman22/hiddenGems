@@ -183,7 +183,7 @@ h2, p { color: #920d40; }
 .tm-btn-submit:hover,
 .tm-btn-submit:focus {
     color: white;
-    background-color: #af144f;
+    background-color: #faf8f9;
 }
 
 .tm-btn-download span { padding-top: 10px; }
