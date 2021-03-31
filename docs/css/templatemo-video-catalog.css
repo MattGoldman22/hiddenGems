@@ -183,7 +183,7 @@ h2, p { color: #920d40; }
 .tm-btn-submit:hover,
 .tm-btn-submit:focus {
     color: white;
-    background-color: #faf8f9;
+    background-color: #af144f;
 }
 
 .tm-btn-download span { padding-top: 10px; }
@@ -270,7 +270,7 @@ h2, p { color: #920d40; }
 
 .tm-category-link.active,
 .tm-category-link:hover {
-    border-bottom: 3px solid #faf9f9;
+    border-bottom: 3px solid #ac0f36;
     color: #c9b713;
 }
 
@@ -330,7 +330,7 @@ h2, p { color: #920d40; }
 }
 
 .tm-share-button:last-child { margin-right: 0; }
-.tm-text-link { color: #fafafa; }
+.tm-text-link { color: #a8113e; }
 
 .tm-likes-box,
 .tm-btn-download {
