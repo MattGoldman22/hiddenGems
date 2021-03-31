@@ -270,7 +270,7 @@ h2, p { color: #920d40; }
 
 .tm-category-link.active,
 .tm-category-link:hover {
-    border-bottom: 3px solid #ac0f36;
+    border-bottom: 3px solid #faf9f9;
     color: #c9b713;
 }
 
