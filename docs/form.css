@@ -1,0 +1,49 @@
+label, input, textarea {
+  display: block;
+}
+
+input{
+  margin-bottom: 0.75em;
+  width: 90%;
+  padding: 0.5em;
+}
+
+input[type="radio"]{
+  display: inline-block;
+}
+textarea {
+  width: 95%;
+  height: 10em;
+  margin-bottom: 1em;
+}
+
+button[type="submit"], [type="reset"]{
+  padding: 10px;
+  font-weight: bold;
+  width: 30%;
+  background-color: #8E0C3A;
+  color: white;
+  display: inline;
+}
+
+#form {
+  width: 500px;
+  margin: 0 auto;
+}
+img {
+  width: 550px;
+  margin: 0 auto;
+  display: block;
+}
+
+#fileToUpload {
+  width: 275px;
+  margin: 0 auto;
+}
+
+label[for="upload"]{
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
