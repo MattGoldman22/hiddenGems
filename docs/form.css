@@ -1,5 +1,6 @@
 label, input, textarea {
   display: block;
+  color: black;
 }
 
 input{
