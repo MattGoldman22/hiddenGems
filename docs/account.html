@@ -25,7 +25,7 @@ var main = function(){
       return;
     }
     else{
-  //    document.getElementById("accountInfo").innerHTML = data;
+      // document.getElementById("accountInfo").innerHTML = data;
     }
   });
 }
@@ -44,8 +44,8 @@ function submitGem(){
   url +="&phonenumber=" + encodeURIComponent(document.getElementById("pNumber").value)
   url +="&address=" + encodeURIComponent(document.getElementById("address").value)
   url +="&campus=" + encodeURIComponent(document.getElementById("campus").value)
-  url +="&comments=" + encodeURIComponent(document.getElementById("fileToUpload").value)
-  /*url +="&fileToUpload=" + encodeURIComponent(document.getElementById("comments").value)*/
+  url +="&comments=" + encodeURIComponent(document.getElementById("comments").value)
+  /*url +="&fileToUpload=" + encodeURIComponent(document.getElementById("fileToUpload").value)*/
   url +="&publish=" + false
 
   loadFile(url,function(data){
@@ -120,9 +120,9 @@ if ($uploadOk == 0) {
     </div>
 
   </nav>
-
-<img src="asu_logo_1.png">
 <section id="form">
+<img src="asu_logo_1.png">
+
       <label for="fName">First & Last Name</label>
       <input type="text" name="first name" required="required" id="fName">
 
@@ -162,6 +162,69 @@ if ($uploadOk == 0) {
   </div>
 </div>
   <!-- put logout button anywhere -->
-<button onclick='doLogout()'>Logout</button>
+<button onclick='doLogout()' id="logout">Logout</button>
+
+
+
+ <section class="call-to-action text-white text-center">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <h2 class="mb-4">Find. Explore. Discover.</h2>
+        </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+          <ul class="list-inline mb-2">
+            <li class="list-inline-item">
+              <a href="about.html">About</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a href="contact.html">Contact</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+                <a href="#">Back to top</a>
+          </ul>
+          <p class="text-muted small mb-4 mb-lg-0">&copy; Hidden Gems 2021. All Rights Reserved.</p>
+        </div>
+        <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item mr-3">
+              <a href="https://www.facebook.com/arizonastateuniversity">
+                <i class="fab fa-facebook fa-2x fa-fw"></i>
+              </a>
+            </li>
+            <li class="list-inline-item mr-3">
+              <a href="https://twitter.com/thesundevils">
+                <i class="fab fa-twitter-square fa-2x fa-fw"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.instagram.com/hiddengemsasu/" target="_blank">
+                <i class="fab fa-instagram fa-2x fa-fw"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
