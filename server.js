@@ -49,7 +49,10 @@ app.get("/addProject", isLoggedIn, function(req,res){
 })
 
 app.get("/getProjects", function(req,res){
-
+	var location=req.query.location
+	db.collection("Gem").find({campus:location}).toArray(function(e,r){
+		res.send(JSON.stringify(r))
+	})
 })
 
 app.use(express.static(path.join(__dirname, 'docs')));
