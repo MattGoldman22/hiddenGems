@@ -331,14 +331,12 @@
             var gems=JSON.parse(data)
             var markup=""
             for (i=0;i<gems.length;i++){
-              markup+=
-
-              "<h1>"+ gems[i].name+"</h1>"+
-              "<h2>"+ gems[i].location+"</h2>"+
-              "<p>" + gems[i].phonenumber+"</p>"+
+              markup+="<h1>"+ gems[i].name+"</h1>"+
+              "<h2>"+ gems[i].location+"</h2>"
+             /* "<p>" + gems[i].phonenumber+"</p>"+
               "<h3>" + gems[i].address+"</h3>"+
               "<h3>"+ gems[i].campus+"</h3>"+
-              "<p>"+ gems[i].comments+"</p>"
+              "<p>"+ gems[i].comments+"</p>"*/
 
             }
             document.getElementById("content").innerHTML+=markup
