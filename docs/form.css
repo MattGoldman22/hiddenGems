@@ -1,5 +1,6 @@
 label, input, textarea {
   display: block;
+  color: black;
 }
 
 input{
@@ -29,6 +30,7 @@ button[type="submit"], [type="reset"]{
 #form {
   width: 500px;
   margin: 0 auto;
+  padding-bottom: 200px;
 }
 img {
   width: 550px;
@@ -47,3 +49,6 @@ label[for="upload"]{
   text-align: center;
 }
 
+#logout {
+  
+ }
