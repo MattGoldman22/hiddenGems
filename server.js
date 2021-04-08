@@ -2,8 +2,8 @@ var url = require("url"),
 	querystring = require("querystring");
 var passport = require('passport');
 var fs = require('fs');
-var dbURL = 'mongodb://hiddengems.fun:27017/test';
-//var dbURL = 'mongodb://127.0.0.1:27017/test';
+//var dbURL = 'mongodb://hiddengems.fun:27017/test';
+var dbURL = 'mongodb://127.0.0.1:27017/test';
 var path = require('path'),
   express = require('express'),
   db = require('mongoskin').db(dbURL);
@@ -49,7 +49,10 @@ app.get("/addProject", isLoggedIn, function(req,res){
 })
 
 app.get("/getProjects", function(req,res){
-
+	var location=req.query.location
+	db.collection("Gem").find({campus:location,publish:true}).toArray(function(e,r){
+		res.send(JSON.stringify(r))
+	})
 })
 
 app.use(express.static(path.join(__dirname, 'docs')));

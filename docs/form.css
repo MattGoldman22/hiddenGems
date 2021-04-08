@@ -18,22 +18,30 @@ textarea {
   margin-bottom: 1em;
 }
 
-button[type="submit"], [type="reset"]{
+button[type="reset"]{
   padding: 10px;
   font-weight: bold;
   width: 30%;
   background-color: #8E0C3A;
   color: white;
   display: inline;
+ margin-left: 150px;
 }
-
+#submit {
+   padding: 10px;
+  font-weight: bold;
+  width: 30%;
+  background-color: #8E0C3A;
+  color: white;
+  display: inline;
+}
 #form {
   width: 500px;
   margin: 0 auto;
   padding-bottom: 200px;
 }
 img {
-  width: 550px;
+  width: 250px;
   margin: 0 auto;
   display: block;
 }
@@ -48,7 +56,22 @@ label[for="upload"]{
   margin: 0 auto;
   text-align: center;
 }
-
+label[for="comments"]{
+ 
+  width: 1000px;
+}
 #logout {
   
  }
+
+#thanks {
+  width: 500px;
+  margin: 0 auto;
+}
+
+section p {
+  font-size: 30px;
+  width: 750px;
+  margin: 0 auto;
+  color: black;
+}
