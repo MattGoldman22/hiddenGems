@@ -69,7 +69,7 @@ function submitGem(){
   </nav>
 <section id="form">
 <img src="HiddenGemsLogo.png">
-
+<form action="submit.html">
       <label for="fName">First & Last Name</label>
       <input type="text" name="first name" required="required" id="fName">
 
@@ -95,8 +95,9 @@ function submitGem(){
       <label for="comments">Comments</label>
       <textarea name="myComments" rows="2" cols="30" id="comments"></textarea>
 
-      <a href="submit.html"><button  onclick="submitGem()" id="submit">Submit</button></a>
+      <button  onclick="submitGem()" id="submit">Submit</button>
       <button type="reset" name="Reset" onclick="resetGem()">Reset</button>
+  </form>
 </section>
 
 <div class='container'>
