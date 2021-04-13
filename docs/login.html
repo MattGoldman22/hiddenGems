@@ -10,7 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
-      
+
       var start = function(){
         $('.modal').modal();
         $("#passwordR").on("keyup focusout", function (e) {
@@ -46,16 +46,16 @@
     </script>
   </head>
     <body onload='start()'>
-    <h1 id='header' style='margin-bottom:50px;text-align:center'>
-        Hidden Gems 
+    <h1 id='header' style='margin-bottom:50px; color:#8C1D40; text-align:center'>
+        <b>Hidden Gems</b>
     </h1>
-        
+
 
     <div style='margin:auto; max-width:400px;display:none' id='loginRegisterWrapper' class='container card'>
       <div class="col s12">
        <ul class="tabs" id='loginTabs' style='text-align:center'>
-        <li class="tab col s3"><a class="active" href="#loginSection">Login</a></li>
-        <li class="tab col s3"><a href="#registerSection">Register</a></li>
+        <li class="tab col s3"><a class="active" href="#loginSection" style="color:#8C1D40;">Login</a></li>
+        <li class="tab col s3"><a href="#registerSection" style="color:#8C1D40;">Register</a></li>
        </ul>
       </div>
       <div id='loginSection' style='padding-bottom:10px;'>
@@ -74,7 +74,7 @@
                 <span class="helper-text" data-error="wrong" data-success="right"></span>
               </div>
          </div>
-          <button type='submit' class="btn waves-effect waves-light"  name="action" style='margin:auto;display: block;margin-bottom:30px'>Login
+          <button type='submit' class="btn waves-effect waves-light" name="action" style='margin:auto;display: block;margin-bottom:30px'>Login
               <i class="material-icons right">arrow_forward</i>
           </button>
         </form>
@@ -101,7 +101,7 @@
         </form>
       </div>
     </div>
-    
+
       <!-- Modal Structure -->
   <div id="failReg" class="modal">
     <div class="modal-content">
@@ -113,5 +113,5 @@
     </div>
   </div>
     </body>
-            
+
 </html>

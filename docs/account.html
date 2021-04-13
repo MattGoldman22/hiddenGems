@@ -57,34 +57,34 @@ function submitGem(){
    <!-- Navigation -->
   <nav class="navbar navbar-light bg-light static-top">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Hidden Gems</a>
+      <a class="navbar-brand" style="color:#8C1D40;" href="index.html"><b><em>Hidden Gems</em></b></a>
 
-          <a clss="navbar-brand" href="Tempe.html">Tempe</a>
-          <a clss="navbar-brand" href="Poly.html">Polytechnic</a>
-          <a clss="navbar-brand" href="Phoenix.html">Downtown Phoenix</a>
-          <a clss="navbar-brand" href="West.html">West</a>
-      <a class="btn btn-primary" href="account.html">Submit Hidden Gem</a>
+          <a clss="navbar-brand" style="color:#8C1D40;" href="Tempe.html">Tempe</a>
+          <a clss="navbar-brand" style="color:#8C1D40;" href="Poly.html">Polytechnic</a>
+          <a clss="navbar-brand" style="color:#8C1D40;" href="Phoenix.html">Downtown Phoenix</a>
+          <a clss="navbar-brand" style="color:#8C1D40;" href="West.html">West</a>
+      <a class="btn btn-primary" style="background-color:#8C1D40;" href="account.html">Submit Hidden Gem</a>
     </div>
 
   </nav>
 <section id="form">
-<img src="HiddenGemsLogo.png">
+<img src="Circlelogo.jpg">
 <form action="submit.html">
-      <label for="fName">First & Last Name</label>
+      <label for="fName" style="color:#8C1D40;"><b>First & Last Name:</b></label>
       <input type="text" name="first name" required="required" id="fName">
 
-      <label for="lName">Name of Location</label>
+      <label for="lName" style="color:#8C1D40;"><b>*Name of Location:</b></label>
       <input type="text" name="last name" required="required" id="lName">
 
-      <label for="eAddress">Email Address</label>
+      <label for="eAddress" style="color:#8C1D40;"><b>Email Address:</b></label>
       <input type="text" name="email address" required="required" id="eAddress">
 
-      <label for="pNumber">Phone Number</label>
+      <label for="pNumber" style="color:#8C1D40;"><b>Phone Number:</b></label>
       <input type="text" name="telephone number" required="required"  maxlength="13" id="pNumber">
 
-      <label>Address for Hidden Gem</label>
+      <label style="color:#8C1D40;"><b>*Address for Hidden Gem:</b></label>
       <input type="address" name="address" required="required" id="address">
-      <label>Campus</label>
+      <label style="color:#8C1D40;"><b>*Campus:</b></label>
       <select id="campus">
         <option value="Tempe">Tempe</option>
         <option value="Polytechnic">Polytechnic</option>
@@ -92,11 +92,13 @@ function submitGem(){
         <option value="Downtown Phoenix">Downtown Phoenix</option>
       </select>
 
-      <label for="comments">Comments</label>
+      <label for="comments" style="color:#8C1D40;"><b>Comments:</b></label>
       <textarea name="myComments" rows="2" cols="30" id="comments"></textarea>
 
-      <button  onclick="submitGem()" id="submit">Submit</button>
-      <button type="reset" name="Reset" onclick="resetGem()">Reset</button>
+      <h6>*Required</h6>
+
+      <button  onclick="submitGem()" <a class="btn btn-primary" id="submit">Submit</button>
+      <button type="reset" name="Reset" <a class="btn btn-primary" style="background-color:#8C1D40;" onclick="resetGem()">Reset</button>
   </form>
 </section>
 
@@ -106,6 +108,66 @@ function submitGem(){
   </div>
 </div>
   <!-- put logout button anywhere -->
-<button onclick='doLogout()'>Logout</button>
+<button onclick='doLogout()'<a class="btn btn-primary" style="background-color:#8C1D40;" style="color: white;">Logout</button>
 </body>
+
+<!-- Call to Action -->
+<section class="call-to-action text-white text-center">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-9 mx-auto">
+        <h2 class="mb-4">Find. Explore. Discover.</h2>
+      </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+        <ul class="list-inline mb-2">
+          <li class="list-inline-item">
+            <a href="about.html" style="color:#8C1D40">About</a>
+          </li>
+          <li class="list-inline-item">&sdot;</li>
+          <li class="list-inline-item">
+            <a href="contact.html" style="color:#8C1D40">Contact</a>
+          </li>
+          <li class="list-inline-item">&sdot;</li>
+          <li class="list-inline-item">
+              <a href="#" style="color:#8C1D40">Back to top</a>
+        </ul>
+        <p class="text-muted small mb-4 mb-lg-0">&copy; Hidden Gems 2021. All Rights Reserved.</p>
+      </div>
+      <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item mr-3">
+            <a href="https://www.facebook.com/arizonastateuniversity">
+              <i class ="fab fa-facebook fa-2x fa-fw" style="color:#8C1D40"></i>
+            </a>
+          </li>
+          <li class="list-inline-item mr-3">
+            <a href="https://twitter.com/thesundevils">
+              <i class="fab fa-twitter-square fa-2x fa-fw" style="color:#8C1D40"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.instagram.com/hiddengemsasu/" target="_blank">
+              <i class="fab fa-instagram fa-2x fa-fw" style="color:#8C1D40"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
 </html>
