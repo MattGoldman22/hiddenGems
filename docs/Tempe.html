@@ -336,9 +336,9 @@
             var markup=""
             for (i=0;i<gems.length;i++){
               markup+=
-              "<div class='gem'>"+
-              "<h1>"+ gems[i].name+"</h1>"+
-              "<h2>"+ gems[i].location+"</h2>"+
+              "<div class='p-4 tm-bg-gray tm-catalog-item-description'>"+
+              "<h3 class='tm-text-primary mb-3 tm-catalog-item-title'>"+ gems[i].location+"</h3>"+
+              "<p class='tm-catalog-item-text'>"+ gems[i].comments+"</p>"+
               "</div>"
             }
               document.getElementById("content").innerHTML+=markup
