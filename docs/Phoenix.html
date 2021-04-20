@@ -23,7 +23,7 @@
   <link href="css/Phx.css" rel="stylesheet">
 </head>
 
-<body>
+<body onload="start()">
 
   <!-- Navigation -->
   <nav class="navbar navbar-light bg-light static-top">
@@ -176,6 +176,25 @@
       </div>
     </div>
   </section>
+
+  <script>
+  function start(){
+    loadFile("./getProjects?location=Downtown Phoenix",function(data){
+      var gems=JSON.parse(data)
+      var markup=""
+      for (i=0;i<gems.length;i++){
+        markup+=
+        "<div class='p-4 tm-bg-gray tm-catalog-item-description'>"+
+        "<h3 class='tm-text-primary mb-3 tm-catalog-item-title'>"+ gems[i].location+"</h3>"+
+        "<p class='tm-catalog-item-text'>"+ gems[i].comments+"</p>"+
+        "</div>"
+      }
+        document.getElementById("content").innerHTML+=markup
+  })
+
+
+}
+  </script>
 
   <section class="testimonials text-center bg-light">
    <div class="container">
